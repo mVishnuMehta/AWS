@@ -1,0 +1,35 @@
+AMI are region specific.
+
+S3
+For size of file greater than 5GB we should use splitting it in multiple uploads
+S3 are at global level
+But bucket are region specific.
+
+S3 Bucket Versioning-
+It helps u access the deleted thing of S3 Buckets.
+
+S3 Encryptions
+
+See the notes for more details encryption.
+
+SSE-S3 
+Server side Encryption
+Encryption using keys handled and managed by Amazon S3.
+It must have header setted to : "x-ams-server-side-encryption":"AES256"
+
+SSE-KMS
+Encryption using keys handled and managed by KMS
+KMS advantage : user-control + audit-trail
+It must have header setted to : "x-ams-server-side-encryption":"aws:kms"
+
+SSE-C
+SSE-C: server-side encryption using data keys fully managed by the customer outside of AWS.
+
+Client-Side Encyption.
+
+Default Encryption can be set through the Property pannel of the S3 bucket object pannel.
+
+
+
+
+
