@@ -1,0 +1,23 @@
+EC2 Instance
+
+SSH into your EC2 Instance
+
+To SSH into your EC2 Instance
+
+ssh ec2-user@PublicIPAddress
+Permission denied will be shown
+
+ssh -i nameofpemfile ec2-user@PublicIPAddress 
+chmod 0400 nameofpemfile
+
+SECURITY GROUP -
+Security groups acts a firewall to an EC2 Instance
+A single SG can be attached to multiple EC2 Instances
+They are region/VPN specific.
+
+By default 
+    All inbound traffic are blocked.
+    All outbound traffic are allowed.
+    
+
+
