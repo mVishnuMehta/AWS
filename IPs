@@ -1,0 +1,10 @@
+Public IP -
+It gets changed for an EC2 Instance whenever we stop and start an EC2 Instance.
+
+Private IP-
+It remains the same for the EC2 Instance.
+
+Elastic IP-
+We can have as many as 5 ElasticIP.
+It doesnt change when an EC2 instance is stopped and started.
+Elastic IP is attached to the Ec2 Instance and can be dettached too.
