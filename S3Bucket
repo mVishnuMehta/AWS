@@ -29,6 +29,26 @@ Client-Side Encyption.
 
 Default Encryption can be set through the Property pannel of the S3 bucket object pannel.
 
+S3 Bucket Policies-
+S3 bucket policy are JSON based policies.
+It has mainly 3 Properties-
+    Effect:"Allow" // It means that what this policy will do either Allow or Deny
+    Principal:"*". // Kis user/account ko policy applied hai
+    Action :[S3:"GetObject"]. // It means what actions are applied to the S3 Obejct.
+    Resources:["arn:aws:S3:::nameofbucket/*"]
+    
+ Pre signed URLs are valid for a limited time and they are used to login for a short Duration of time.
+ 
+To allow u to make a S3 Website-
+You need to have 3 things-
+1) The bucket should have public access.
+2) The bucket policy should be written in a such a way that it allows public access.
+3) The Static website hosting should be turned on.
+
+
+
+ 
+    
 
 
 
